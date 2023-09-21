@@ -1,6 +1,7 @@
 {
   "name": "kb-mall-web",
   "description": "KB mall for web front",
+  "version": "1.0.0",
   "private": true,
   "type": "module",
   "scripts": {
