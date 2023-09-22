@@ -1,9 +1,11 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   modules: [
+    '@nuxt/devtools',
     '@vueuse/nuxt',
     '@pinia/nuxt',
-    '@vite-pwa/nuxt'
+    '@vite-pwa/nuxt',
+    'nuxt-jsonld'
   ],
   app: {
     head: {
@@ -15,5 +17,10 @@ export default defineNuxtConfig({
       ],
     }
   },
+  // 预加载统一的main.css样式文件
+  css: [
+    '@/styles/main.css'
+  ],
+  debug: true,
   devtools: { enabled: true }
 })
