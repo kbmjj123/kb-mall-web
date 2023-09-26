@@ -29,6 +29,7 @@
   },
   "dependencies": {
     "@formkit/auto-animate": "^0.8.0",
+    "@nuxt/image": "1.0.0-rc.2",
     "nuxt-jsonld": "^2.0.8",
     "pinia-plugin-persistedstate": "^3.2.0"
   }

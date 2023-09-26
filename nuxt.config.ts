@@ -10,8 +10,13 @@ export default defineNuxtConfig({
     '@vite-pwa/nuxt',
     'dayjs-nuxt',
     '@nuxtjs/color-mode',
+    '@nuxt/image',
     'nuxt-jsonld'
   ],
+  components: {
+    global: true,
+    dirs: ['~/components/global']
+  },
   colorMode: {
     preference: 'system', // default theme
     dataValue: 'theme', // activate data-theme in <html> tag
