@@ -2,8 +2,3 @@
   import { ref } from 'vue';
   const xxx = ref('xxx')
 </script>
-<template></template>
-  <div>
-    {{ xxx }}
-  </div>
-</template>

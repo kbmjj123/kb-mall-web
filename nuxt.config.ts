@@ -4,9 +4,24 @@ export default defineNuxtConfig({
     '@nuxt/devtools',
     '@vueuse/nuxt',
     '@pinia/nuxt',
+    '@nuxtjs/i18n',
+    'nuxt-lodash',
+    '@nuxtjs/tailwindcss',
     '@vite-pwa/nuxt',
+    'dayjs-nuxt',
+    '@nuxtjs/color-mode',
+    '@nuxt/image',
     'nuxt-jsonld'
   ],
+  components: {
+    global: true,
+    dirs: ['~/components/global']
+  },
+  colorMode: {
+    preference: 'system', // default theme
+    dataValue: 'theme', // activate data-theme in <html> tag
+    classSuffix: '',
+  },
   app: {
     head: {
       viewport: 'width=device-width,initial-scale=1',
@@ -17,10 +32,6 @@ export default defineNuxtConfig({
       ],
     }
   },
-  // 预加载统一的main.css样式文件
-  css: [
-    '@/styles/main.css'
-  ],
   debug: true,
   devtools: { enabled: true }
 })
