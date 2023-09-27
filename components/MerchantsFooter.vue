@@ -3,6 +3,7 @@
     <ul>
 
     </ul>
+    {{ $t('account.login') }}
     <section>Copyright © 2004-2023  91temaichang.com</section>
   </div>
 </template>
