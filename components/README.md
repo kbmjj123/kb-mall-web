@@ -15,6 +15,7 @@ export default defintNuxtConfig({
 
 #### global components
 1. TopActivityBlock: the top banner defined at the top of page!
+2. KbInput: the common input which has custom ui interface and interact, and with auto clear icon when it is focused!
 
 #### business components
 1. MeachentsFooter: ask merchant to settled in mall, become a seller who make deal in mall!

@@ -1,10 +1,10 @@
-import zhCN from "./locates/zh-CN"
-import enUS from "./locates/en-US"
+import zhCN from "./locates/zh-CN.json"
+import en from "./locates/en.json"
 export default defineI18nConfig(() => ({
   legacy: false,
-  locale: 'zh-CN',
+  locale: 'zhCN',
   messages: {
-    'en-US': enUS,
-    'zh-CN': zhCN,
+    'en': en,
+    'zhCN': zhCN,
   }
 }))

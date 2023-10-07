@@ -1,0 +1,19 @@
+{
+  "common": {
+    "sure": "确定",
+    "cancel": "取消"
+  },
+  "footer": {
+    "aboutUs": "关于我们",
+    "concatUs": "联系我们",
+    "talentRecruitment": "人才招聘",
+    "marchantSettled": "商家入驻"
+  },
+  "account": {
+    "loginTitle": "账户登录",
+    "accountLabel": "邮箱/账号名/登录手机",
+    "passwordLabel": "密码",
+    "forgetPassword": "忘记密码？",
+    "login": "登录"
+  }
+}

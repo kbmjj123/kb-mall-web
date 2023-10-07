@@ -1,0 +1,13 @@
+{
+  "common": {
+    "sure": "OK",
+    "cancel": "Cancel"
+  },
+  "account": {
+    "login": "Login",
+    "forgetPassword": "forget password?",
+    "loginTitle": "Account Login",
+    "accountLabel": "email/account/phone",
+    "passwordLabel": "password"
+  }
+}
