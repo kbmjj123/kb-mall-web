@@ -1,7 +1,10 @@
 <template>
   <div>
     <TopActivityBlock></TopActivityBlock>
-    <section class="flex content-end bg-[url('bg-login')]">
+    <h1 class="text-green-300">
+      Hello world!
+    </h1>
+    <div class="flex content-end">
       <div>
         <div class="tabs">
           <a class="tab">{{ $t('account.loginTitle') }}</a>
@@ -13,13 +16,14 @@
           <input type="text" :placeholder="$t('account.passwordLabel')" class="input w-full max-w-xs" />
         </div>
         <div class="text-right">{{ $t('account.forgetPassword') }}</div>
-        <div class="text-slate-700">{{ $t('account.login') }}</div>
+        <div class="text-red-300">{{ $t('account.login') }}</div>
       </div>
-    </section>
+    </div>
   </div>
 </template>
 
 <script lang="ts" setup>
+
 definePageMeta({
   layout: "account"
 })
