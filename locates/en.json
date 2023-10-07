@@ -1,7 +1,13 @@
 {
+  "app": {
+    "name": "KB Mall"
+  },
   "common": {
     "sure": "OK",
     "cancel": "Cancel"
+  },
+  "footer": {
+    
   },
   "account": {
     "login": "Login",

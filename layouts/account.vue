@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div>我是账号的公共头部视图</div>
+    <TopActivityBlock></TopActivityBlock>
     <slot></slot>
     <MerchantsFooter></MerchantsFooter>
   </div>
@@ -9,7 +9,3 @@
 <script lang="ts" setup>
 import MerchantsFooter from "~/components/MerchantsFooter.vue"
 </script>
-
-<style lang="" scoped>
-
-</style>
