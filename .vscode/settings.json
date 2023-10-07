@@ -1,0 +1,13 @@
+{
+  "i18n-ally.localesPaths": [
+    "locates"
+  ],
+  "i18n-ally.keystyle": "nested",
+  "i18n-ally.sourceLanguage": "en",
+  "files.associations": {
+    "*.css": "tailwindcss"
+  },
+  "editor.quickSuggestions": {
+      "strings": true
+  }
+}

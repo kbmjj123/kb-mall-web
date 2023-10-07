@@ -1,8 +1,6 @@
 <template>
-  <div>
-    <NuxtImg :src="bannerSrc" 
+  <NuxtImg :src="bannerSrc" class="w-full cursor-pointer" fit="contain"
       :placeholder="[50, 25]" loading="lazy"></NuxtImg>
-  </div>
 </template>
 
 <script lang="ts" setup>
