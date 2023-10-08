@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-white shadow-md">
+  <div class="bg-white shadow-sm">
     <div class="flex justify-between mx-auto app-width px-2 py-5">
       <div class="flex flex-1 justify-center">
         <Icon name="emojione-v1:alien" size="4em"></Icon>
