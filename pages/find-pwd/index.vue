@@ -1,6 +1,6 @@
 <template>
   <div>
-    
+    我是忘记密码
   </div>
 </template>
 

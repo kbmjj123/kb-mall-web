@@ -10,10 +10,13 @@
     
   },
   "account": {
-    "login": "Login",
-    "forgetPassword": "forget password?",
     "loginTitle": "Account Login",
     "accountLabel": "email/account/phone",
-    "passwordLabel": "password"
+    "passwordLabel": "password",
+    "forgetPassword": "forget password?",
+    "login": "Login",
+    "welcomeLogin": "Welcome Login",
+    "registerRightNow": "register right now",
+    "welcomeRegister": "Welcome Register"
   }
 }
