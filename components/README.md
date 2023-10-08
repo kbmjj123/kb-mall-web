@@ -19,3 +19,4 @@ export default defintNuxtConfig({
 
 #### business components
 1. MeachentsFooter: ask merchant to settled in mall, become a seller who make deal in mall!
+2. TopNav: a quick block on the top of screen, which supply quickly functions jump!
