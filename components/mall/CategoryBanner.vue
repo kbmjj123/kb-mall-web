@@ -1,16 +1,16 @@
 <template>
-  <div class="grid gap-2 grid-cols-[1.2fr_5fr_1.2fr] px-2 py-5">
+  <div class="grid gap-2 grid-cols-[2fr_5fr_2fr] px-2 py-5">
     <!-- category list block -->
     <div class="bg-white">
       <ul class="py-2">
-        <li v-for="(firstCate, firstIndex) in categoryList" :key="firstIndex" class="text-gray-500 text-sm px-2 py-1 hover:bg-gray-400 hover:cursor-pointer">
+        <li v-for="(firstCate, firstIndex) in categoryList" :key="firstIndex" class="text-gray-500 text-sm px-4 py-1 hover:bg-gray-400 hover:cursor-pointer">
           <NuxtLink>{{ firstCate.name }}</NuxtLink>
         </li>
       </ul>
     </div>
     <!-- banner block -->
-    <div class="h-[40vh]">
-      <Carousel :autoplay="2000" pauseAutoplayOnHover class="w-full h-[40vh] object-cover" >
+    <div class="h-[45vh]">
+      <Carousel :autoplay="2000" pauseAutoplayOnHover class="w-full h-[45vh] object-cover" >
         <Slide v-for="(item, index) in bannerList" :key="index">
           <NuxtLink class="w-full h-full">
             <img :src="item.imgUrl" class="w-full h-full">
@@ -22,8 +22,21 @@
       </Carousel>
     </div>
     <!-- user info block -->
-    <div class="bg-yellow-200">
-      
+    <div class="bg-white grid grid-rows-3">
+      <NuxtLink class="flex flex-col justify-center items-center hover:cursor-pointer">
+        <Icon name="uil:user-circle" size="3em"></Icon>
+        <span class="text-slate-900">Hi!您好</span>
+      </NuxtLink>
+      <div class="flex justify-evenly self-center">
+        <NuxtLink class="px-4 py-1 rounded-3xl bg-red-500 text-white text-sm hover:cursor-pointer hover:bg-red-600">登录</NuxtLink>
+        <NuxtLink class="px-4 py-1 rounded-3xl bg-orange-500 text-white text-sm hover:cursor-pointer hover:bg-orange-600">注册</NuxtLink>
+      </div>
+      <div class="grid grid-cols-3 text-slate-900">
+        <NuxtLink v-for="(item, index) in useFunList" :key="index" class="flex flex-col justify-center items-center hover:cursor-pointer hover:text-red-500">
+          <Icon :name="item.icon" size="1.5em"></Icon>
+          <span class="text-xs pt-1">{{ item.title }}</span>
+        </NuxtLink>
+      </div>
     </div>
   </div>
 </template>
@@ -1541,23 +1554,40 @@ const categoryList = ref([
 const bannerList = ref([
   {
     title: '',
-    imgUrl: 'https://imgcps.jd.com/ling-cubic/ling4/lab/amZzL3QxLzE0NTY3Mi8xNy8zOTM1Ni8zNzQ2OS82NGUzMjhjMkY1OGNjOTk3ZC9kMzI5NzJiMWI0YWE1MzNlLnBuZw/5Lqs6YCJ5aW96LSn/5L2g5YC85b6X5oul5pyJ/1635187706996019201/cr/s/q.jpg',
+    imgUrl: 'https://img.alicdn.com/imgextra/i1/6000000005991/O1CN01jfz8m61u7vi92sd5v_!!6000000005991-0-octopus.jpg',
     link: '/'
   },
   {
     title: '',
-    imgUrl: 'https://imgcps.jd.com/ling-cubic/ling4/lab/amZzL3QxLzQ5MTQzLzI4LzE3MDM2LzIxOTg4OS82MTM4NDhkNkU2MDY1ZWM5OC9iM2I4ZWE1ODE5MmQzNmI0LnBuZw/5Lqs6YCJ5aW96LSn/5L2g5YC85b6X5oul5pyJ/1635185254164787202/cr/s/q.jpg',
+    imgUrl: 'https://img.alicdn.com/imgextra/i4/O1CN01GOlEEW1zidUliI8O7_!!6000000006748-2-tps-846-472.png',
     link: '/'
   },
   {
     title: '',
-    imgUrl: 'https://imgcps.jd.com/img-cubic/creative_server_cia_jdcloud/v2/2000367/10042194016518/FocusFullshop/CkNqZnMvdDEvMjAyNjI3LzExLzM1MTc3LzYxMjQyLzY1MGNhMzAzRmRjNGRhMDYyLzE1OTMzZWEwNGU2ZjNiNDkucG5nEgkyLXR5XzBfNTMwAjjvi3pCFgoS5YWs54mb5byA5YWz5o-S5bqnEAFCEwoP5LyY5oOg5Lqr5LiN5YGcEAJCEAoM56uL5Y2z5oqi6LStEAZCBwoD5oqiEAdYhvKgi6KkAg/cr/s/q.jpg',
+    imgUrl: 'https://img.alicdn.com/imgextra/i1/6000000001540/O1CN0154HRNF1NFMoxethLo_!!6000000001540-0-octopus.jpg',
     link: '/'
   },
   {
     title: '',
-    imgUrl: 'https://img20.360buyimg.com/pop/s590x470_jfs/t1/123148/34/30204/75629/63d9c142Fffb8730d/8e84ea14e518ccbd.jpg',
+    imgUrl: 'https://img.alicdn.com/imgextra/i1/6000000003851/O1CN01AKEAHd1eJo8DNc0VJ_!!6000000003851-0-octopus.jpg',
     link: '/'
+  },
+])
+const useFunList = ref([
+  {
+    title: '宝贝收藏',
+    icon: 'ion:star-outline',
+    path: '/'
+  },
+  {
+    title: '收藏的店',
+    icon: 'ion:storefront-outline',
+    path: '/'
+  },
+  {
+    title: '我的足迹',
+    icon: 'uil:clock-five',
+    path: '/'
   },
 ])
 </script>

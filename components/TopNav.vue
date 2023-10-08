@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-gray-200 flex justify-center">
+  <div class="bg-gray-200 dark:bg-slate-700 flex justify-center">
     <section class="flex justify-between app-width">
       <!-- location block -->
       <div class=""></div>
