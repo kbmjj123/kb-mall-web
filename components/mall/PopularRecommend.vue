@@ -8,7 +8,7 @@
         <div class="flex justify-center items-center p-8">
           <NuxtImg :src="item.productIcon"></NuxtImg>
         </div>
-        <div class="text-xs mx-3">{{ item.productName }}</div>
+        <div class="text-xs mx-3 line-clamp-2">{{ item.productName }}</div>
         <div class="mx-3 mt-1 mb-2 font-medium">¥{{ item.price }}</div>
       </NuxtLink>
     </li>
@@ -17,6 +17,12 @@
 
 <script lang="ts" setup>
 const productList = ref([
+  {
+    productIcon: 'https://img13.360buyimg.com/jdcms/s300x300_jfs/t1/179378/8/39622/53486/651594bcF176f3f54/197a5c1199f31210.jpg',
+    productName: '欧普（OPPLE）led调光卧室灯吸顶灯客厅灯餐厅灯圆形现代简约超薄灯具 ',
+    productId: '1',
+    price: 128.7
+  },
   {
     productIcon: 'https://img13.360buyimg.com/jdcms/s300x300_jfs/t1/179378/8/39622/53486/651594bcF176f3f54/197a5c1199f31210.jpg',
     productName: '欧普（OPPLE）led调光卧室灯吸顶灯客厅灯餐厅灯圆形现代简约超薄灯具 ',
