@@ -1,10 +1,11 @@
 <template>
-  <div class="text-red-500">
+  <div class="">
     <CategoryBanner></CategoryBanner>
-    我是首页
+    <PopularRecommend></PopularRecommend>
   </div>
 </template>
 
 <script lang="ts" setup>
 import CategoryBanner from '~/components/mall/CategoryBanner.vue'
+import PopularRecommend from '~/components/mall/PopularRecommend.vue'
 </script>
