@@ -1,9 +1,8 @@
 <template>
-  <div class="text-red-500">
-    我是首页
+  <div>
+    商家审核状态
   </div>
 </template>
 
 <script lang="ts" setup>
-
 </script>
