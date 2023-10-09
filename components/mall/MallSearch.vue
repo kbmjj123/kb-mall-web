@@ -10,18 +10,19 @@
             <input placeholder="神舟笔记本" class="flex-1 border-none outline-none text-xs px-3">
             <span class="px-5 py-1 bg-red-500"><Icon name="uil:search" color="white"></Icon></span>
           </div>
-          <div class="flex items-center ml-4 px-5 bg-white border-[#eee] dark:bg-slate-800 border text-red-500 hover:cursor-pointer hover:bg-slate-50 dark:hover:bg-slate-900">
+          <NuxtLink target="_blank" to="/car"
+          class="flex items-center ml-4 px-5 bg-white border-[#eee] dark:bg-slate-800 border text-red-500 hover:cursor-pointer hover:bg-slate-50 dark:hover:bg-slate-900">
             <div class="mr-4 relative">
               <Icon name="uil:shopping-cart"></Icon>
               <span class="absolute text-white rounded-xl px-1 py bg-red-500 text-xs -right-[0.5rem]">2</span>
             </div>
             <span class="text-xs">购物车</span>
-          </div>
+          </NuxtLink>
 
         </section>
         <ul class="flex flex-nowrap mt-2 mx-10">
-          <li v-for="(item, index) in hotKeyList" :key="index" class="text-xs text-gray-400 mr-2">
-            <NuxtLink :class="item.activityClass">{{ item.key }}</NuxtLink>
+          <li v-for="(item, index) in hotKeyList" :key="index" class="text-xs text-gray-400 mr-2 hover:text-red-500 hover:underline">
+            <NuxtLink :class="item.activityClass" to="/product/list" target="_blank">{{ item.key }}</NuxtLink>
           </li>
         </ul>
         <ul class="flex flex-nowrap mt-6">

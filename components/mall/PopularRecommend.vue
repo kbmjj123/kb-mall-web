@@ -4,7 +4,7 @@
   </div>
   <ul class="grid grid-cols-5 gap-2">
     <li v-for="(item, index) in productList" :key="index" class="bg-white hover:cursor-pointer">
-      <NuxtLink class="hover:text-red-500">
+      <NuxtLink class="hover:text-red-500" to="/product/detail" target="_blank">
         <div class="flex justify-center items-center p-8">
           <NuxtImg :src="item.productIcon"></NuxtImg>
         </div>

@@ -5,10 +5,12 @@
     <div class="app-width mx-auto">
       <slot></slot>
     </div>
+    <CertificateFooter></CertificateFooter>
   </div>
 </template>
 
 <script lang="ts" setup>
 import TopNav from '~/components/TopNav.vue'
 import MallSearch from '~/components/mall/MallSearch.vue'
+import CertificateFooter from '~/components/CertificateFooter.vue';
 </script>
