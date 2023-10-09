@@ -4,18 +4,13 @@
   </div>
   <ul class="grid grid-cols-5 gap-2">
     <li v-for="(item, index) in productList" :key="index" class="bg-white hover:cursor-pointer">
-      <NuxtLink class="hover:text-red-500" to="/product/detail" target="_blank">
-        <div class="flex justify-center items-center p-8">
-          <NuxtImg :src="item.productIcon"></NuxtImg>
-        </div>
-        <div class="text-xs mx-3 line-clamp-2">{{ item.productName }}</div>
-        <div class="mx-3 mt-1 mb-2 font-medium">¥{{ item.price }}</div>
-      </NuxtLink>
+      <ProductCell :item="item"></ProductCell>
     </li>
   </ul>
 </template>
 
 <script lang="ts" setup>
+import ProductCell from './ProductCell.vue'
 const productList = ref([
   {
     productIcon: 'https://img13.360buyimg.com/jdcms/s300x300_jfs/t1/179378/8/39622/53486/651594bcF176f3f54/197a5c1199f31210.jpg',
