@@ -1,5 +1,5 @@
 <template>
-  <div class="grid gap-2 grid-cols-[2fr_5fr_2fr] px-2 py-5">
+  <div class="grid gap-2 grid-cols-[2fr_5fr_2fr] py-3">
     <!-- category list block -->
     <div class="bg-white dark:bg-slate-700">
       <ul class="py-2">

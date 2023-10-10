@@ -1,9 +1,9 @@
 <template>
   <div class="flex justify-center items-center p-1">
-    <h3 class="relative w-[150px] h-[45px] text-[22px] font-bold overflow-hidden text-[#333] box-border px-[30px] py-0">为你推荐</h3>
+    <h3 class="relative w-[150px] h-[45px] text-[22px] font-bold overflow-hidden text-[#333] box-border px-[30px] py-0 dark:text-slate-100">{{ $t('app.recommendForYou') }}</h3>
   </div>
   <ul class="grid grid-cols-5 gap-2">
-    <li v-for="(item, index) in productList" :key="index" class="bg-white hover:cursor-pointer">
+    <li v-for="(item, index) in productList" :key="index" class="bg-white dark:bg-slate-700 hover:cursor-pointer">
       <ProductCell :item="item"></ProductCell>
     </li>
   </ul>

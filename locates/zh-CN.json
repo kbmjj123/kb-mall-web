@@ -1,7 +1,8 @@
 {
   "app": {
     "name": "KB商城",
-    "welcome": "Hi!您好"
+    "welcome": "Hi!您好",
+    "recommendForYou": "为你推荐"
   },
   "common": {
     "sure": "确定",

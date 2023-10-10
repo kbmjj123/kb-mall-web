@@ -1,7 +1,7 @@
 <template>
   <section class="absolute top-8 -right-20 bg-white dark:bg-slate-700">
     <ul class="flex flex-col text-sm">
-      <li v-for="(item, index) in navList" :key="index" class="border-b border-slate-100 last:border-none">
+      <li v-for="(item, index) in navList" :key="index" class="border-b border-slate-100 dark:border-slate-800 last:border-none">
         <NuxtLink @click="clickNav(item.action)" class="text-stone-600 hover:bg-red-500 hover:cursor-pointer hover:text-white flex flex-col justify-center items-center p-3">
           <Icon v-if="'topIcon' === item.type" :name="item.top" size="1.4em"></Icon>
           <span v-else="'topLabel' === item.type">{{ item.top }}</span>
