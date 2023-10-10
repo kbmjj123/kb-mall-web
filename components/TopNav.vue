@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-gray-200 dark:bg-slate-700 flex justify-center">
+  <div class="bg-gray-200 dark:bg-slate-700 flex justify-center relative">
     <section class="flex justify-between app-width">
       <!-- location block -->
       <div class=""></div>
@@ -15,9 +15,10 @@
         <NuxtLink class="cursor-pointer hover:underline">手机商城</NuxtLink>
       </div>
     </section>
+    <BrightnessSwitcher></BrightnessSwitcher>
   </div>
 </template>
 
 <script lang="ts" setup>
-
+import BrightnessSwitcher from '~/components/BrightnessSwitcher.vue'
 </script>

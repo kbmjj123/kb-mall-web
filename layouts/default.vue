@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-gray-50">
+  <div class="bg-gray-50 dark:bg-slate-800">
     <TopNav></TopNav>
     <MallSearch></MallSearch>
     <div class="app-width mx-auto">

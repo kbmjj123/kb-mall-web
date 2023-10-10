@@ -25,6 +25,9 @@ devDependencies:
   '@nuxt/devtools':
     specifier: latest
     version: 1.0.0-beta.0(nuxt@3.7.4)(rollup@2.79.1)(vite@4.4.11)
+  '@nuxtjs/color-mode':
+    specifier: ^3.3.0
+    version: 3.3.0(rollup@2.79.1)
   '@nuxtjs/i18n':
     specifier: 8.0.0-rc.4
     version: 8.0.0-rc.4(rollup@2.79.1)(vue@3.3.4)
@@ -34,9 +37,6 @@ devDependencies:
   '@pinia/nuxt':
     specifier: ^0.4.11
     version: 0.4.11(rollup@2.79.1)(typescript@5.2.2)(vue@3.3.4)
-  '@tailwindcss/line-clamp':
-    specifier: ^0.4.4
-    version: 0.4.4(tailwindcss@3.3.3)
   '@vite-pwa/nuxt':
     specifier: ^0.1.1
     version: 0.1.1(@nuxt/kit@3.7.4)(vite-plugin-pwa@0.16.5)
@@ -2422,6 +2422,17 @@ packages:
       - vue-tsc
     dev: true
 
+  /@nuxtjs/color-mode@3.3.0(rollup@2.79.1):
+    resolution: {integrity: sha512-YVFNmTISke1eL7uk5p9I1suOsM222FxrqKoF13HS4x94OKCWwPLLeTCEzHZ8orzKnaFUbCXpuL4pRv8gvW+0Kw==}
+    dependencies:
+      '@nuxt/kit': 3.7.4(rollup@2.79.1)
+      lodash.template: 4.5.0
+      pathe: 1.1.1
+    transitivePeerDependencies:
+      - rollup
+      - supports-color
+    dev: true
+
   /@nuxtjs/i18n@8.0.0-rc.4(rollup@2.79.1)(vue@3.3.4):
     resolution: {integrity: sha512-cxeptuvpUi4nA3PvaR8HTqRqnywx0djr/6Pc+47Eh2ut06hiO2ufHOUl4nUFElBd+gOTenKxGnzga3XQkojj0A==}
     engines: {node: ^14.16.0 || >=16.11.0}
@@ -2924,14 +2935,6 @@ packages:
       json5: 2.2.3
       magic-string: 0.25.9
       string.prototype.matchall: 4.0.10
-    dev: true
-
-  /@tailwindcss/line-clamp@0.4.4(tailwindcss@3.3.3):
-    resolution: {integrity: sha512-5U6SY5z8N42VtrCrKlsTAA35gy2VSyYtHWCsg1H87NU1SXnEfekTVlrga9fzUDrrHcGi2Lb5KenUWb4lRQT5/g==}
-    peerDependencies:
-      tailwindcss: '>=2.0.0 || >=3.0.0 || >=3.0.0-alpha.1'
-    dependencies:
-      tailwindcss: 3.3.3
     dev: true
 
   /@tootallnate/once@2.0.0:

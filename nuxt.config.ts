@@ -8,6 +8,7 @@ export default defineNuxtConfig({
     '@nuxtjs/i18n',
     'nuxt-lodash',
     '@nuxtjs/tailwindcss',
+    '@nuxtjs/color-mode',
     '@vite-pwa/nuxt',
     'dayjs-nuxt',
     '@nuxt/image',
@@ -28,5 +29,10 @@ export default defineNuxtConfig({
     }
   },
   debug: true,
-  devtools: { enabled: true }
+  devtools: { enabled: true },
+  // as below are setting for modules
+  colorMode: {
+    classPrefix: '',
+    classSuffix: ''
+  }
 })

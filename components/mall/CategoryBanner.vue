@@ -1,7 +1,7 @@
 <template>
   <div class="grid gap-2 grid-cols-[2fr_5fr_2fr] px-2 py-5">
     <!-- category list block -->
-    <div class="bg-white">
+    <div class="bg-white dark:bg-slate-700">
       <ul class="py-2">
         <li v-for="(firstCate, firstIndex) in categoryList" :key="firstIndex" class="text-gray-500 text-sm px-4 py-1 hover:bg-gray-400 hover:cursor-pointer">
           <NuxtLink>{{ firstCate.name }}</NuxtLink>
@@ -22,7 +22,7 @@
       </Carousel>
     </div>
     <!-- user info block -->
-    <div class="bg-white grid grid-rows-3">
+    <div class="bg-white grid grid-rows-3 dark:bg-slate-700">
       <NuxtLink class="flex flex-col justify-center items-center hover:cursor-pointer">
         <Icon name="uil:user-circle" size="3em"></Icon>
         <span class="text-slate-900">Hi!您好</span>
@@ -31,7 +31,7 @@
         <NuxtLink to="/login" class="px-4 py-1 rounded-3xl bg-red-500 text-white text-sm hover:cursor-pointer hover:bg-red-600">登录</NuxtLink>
         <NuxtLink to="/register" class="px-4 py-1 rounded-3xl bg-orange-500 text-white text-sm hover:cursor-pointer hover:bg-orange-600">注册</NuxtLink>
       </div>
-      <div class="grid grid-cols-3 text-slate-900">
+      <div class="grid grid-cols-3 text-slate-900 dark:text-slate-100">
         <NuxtLink v-for="(item, index) in useFunList" :key="index" :to="item.path" class="flex flex-col justify-center items-center hover:cursor-pointer hover:text-red-500">
           <Icon :name="item.icon" size="1.5em"></Icon>
           <span class="text-xs pt-1">{{ item.title }}</span>
