@@ -25,11 +25,11 @@
     <div class="bg-white grid grid-rows-3 dark:bg-slate-700">
       <NuxtLink class="flex flex-col justify-center items-center hover:cursor-pointer">
         <Icon name="uil:user-circle" size="3em"></Icon>
-        <span class="text-slate-900">Hi!您好</span>
+        <span class="text-slate-900">{{ $t('app.welcome') }}</span>
       </NuxtLink>
       <div class="flex justify-evenly self-center">
-        <NuxtLink to="/login" class="px-4 py-1 rounded-3xl bg-red-500 text-white text-sm hover:cursor-pointer hover:bg-red-600">登录</NuxtLink>
-        <NuxtLink to="/register" class="px-4 py-1 rounded-3xl bg-orange-500 text-white text-sm hover:cursor-pointer hover:bg-orange-600">注册</NuxtLink>
+        <NuxtLink to="/login" class="px-4 py-1 rounded-3xl bg-red-500 text-white text-sm hover:cursor-pointer hover:bg-red-600">{{ $t('account.login') }}</NuxtLink>
+        <NuxtLink to="/register" class="px-4 py-1 rounded-3xl bg-orange-500 text-white text-sm hover:cursor-pointer hover:bg-orange-600">{{ $t('account.register') }}</NuxtLink>
       </div>
       <div class="grid grid-cols-3 text-slate-900 dark:text-slate-100">
         <NuxtLink v-for="(item, index) in useFunList" :key="index" :to="item.path" class="flex flex-col justify-center items-center hover:cursor-pointer hover:text-red-500">
@@ -44,6 +44,7 @@
 <script lang="ts" setup>
 import 'vue3-carousel/dist/carousel.css?t=128'
 import { Carousel, Slide, Navigation } from 'vue3-carousel'
+const { t } = useI18n()
 const categoryList = ref([
   {
     id: '1',
@@ -1575,17 +1576,17 @@ const bannerList = ref([
 ])
 const useFunList = ref([
   {
-    title: '宝贝收藏',
+    title: t('person.goodCollect'),
     icon: 'ion:star-outline',
     path: '/collection/good'
   },
   {
-    title: '收藏的店',
+    title: t('person.storeCollect'),
     icon: 'ion:storefront-outline',
     path: '/collection/shop'
   },
   {
-    title: '我的足迹',
+    title: t('person.browseHistory'),
     icon: 'uil:clock-five',
     path: '/'
   },
