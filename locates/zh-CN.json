@@ -1,6 +1,8 @@
 {
   "app": {
-    "name": "KB商城"
+    "name": "KB商城",
+    "welcome": "Hi!您好",
+    "recommendForYou": "为你推荐"
   },
   "common": {
     "sure": "确定",
@@ -21,10 +23,16 @@
     "passwordLabel": "密码",
     "forgetPassword": "忘记密码?",
     "login": "登录",
+    "register": "注册",
     "welcomeLogin": "欢迎登录",
     "registerRightNow": "立即注册",
     "welcomeRegister": "欢迎注册",
     "existAccount1": "已有账号?",
     "existAccount2": "请登录"
+  },
+  "person": {
+    "goodCollect": "宝贝收藏",
+    "storeCollect": "收藏的店",
+    "browseHistory": "我的足迹"
   }
 }

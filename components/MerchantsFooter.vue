@@ -7,12 +7,13 @@
           <NuxtLink :to="item.link" :target="item.target">{{ item.title }}</NuxtLink>
         </li>
       </ul>
-      <section class="text-center text-slate-400 text-xs pt-2">Copyright © 2004-2023 {{ $t('app.name') }} 91temaichang.com {{ $t('footer.copyright') }}</section>
+      <Copyright></Copyright>
     </div>
   </div>
 </template>
 
 <script lang="ts" setup>
+import Copyright from './Copyright.vue';
   const { t } = useI18n()
   const linkArray = ref([
     {

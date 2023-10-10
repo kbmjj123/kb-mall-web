@@ -18,5 +18,13 @@ export default defintNuxtConfig({
 2. KbInput: the common input which has custom ui interface and interact, and with auto clear icon when it is focused!
 
 #### business components
+> this directory divide into several parts, there are global bussiness component in the root directory, and in the sub directory they are different modules!
+
+**As Below they are diferent business modules in project**
++ mall: components in mall pages
+  - MallSearch: top header component that supply quickly search in mall which on the top of mall;
+  - CategoryBanner: with cateory and banner in project;
+
+**As Below they are global component**
 1. MeachentsFooter: ask merchant to settled in mall, become a seller who make deal in mall!
 2. TopNav: a quick block on the top of screen, which supply quickly functions jump!

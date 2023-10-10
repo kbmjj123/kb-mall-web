@@ -15,6 +15,7 @@
     "passwordLabel": "password",
     "forgetPassword": "forget password?",
     "login": "Login",
+    "register": "Register",
     "welcomeLogin": "Welcome Login",
     "registerRightNow": "register right now",
     "welcomeRegister": "Welcome Register"
