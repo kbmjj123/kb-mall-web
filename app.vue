@@ -5,3 +5,7 @@
     </NuxtLayout>
   </div>
 </template>
+
+<script setup lang="ts">
+  globalThis.$fetch = request
+</script>
