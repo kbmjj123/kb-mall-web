@@ -14,8 +14,6 @@
 <script lang="ts" setup>
 import PicSkuRecommend from '~/components/mall/product/PicSkuRecommend.vue'
 import ShopAndDesc from '~/components/mall/product/ShopAndDesc.vue'
+const api = useApi()
+const result = await api.product.getProductDetail('a8e71e4ed2a844a89111affec178fd9f')
 </script>
-
-<style lang="" scoped>
-
-</style>

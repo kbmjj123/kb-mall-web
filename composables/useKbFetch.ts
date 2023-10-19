@@ -20,7 +20,7 @@ function transform<DataT>(input: DataT): DataT{
 }
 // the common fetch methods
 export function useKbFetch<T>(kbRequest: KbRequest){
-  const { url, params, method = "post", body, server, lazy, watch } = kbRequest
+  const { url, params, method = "post", body, server = true, lazy, watch } = kbRequest
   const defaults: UseFetchOptions<T> = {
     baseURL: apiHost,
     key: url.toString(),

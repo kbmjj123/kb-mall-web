@@ -13,6 +13,5 @@ import SecondKillSpecial from '~/components/mall/SecondKillSpecial.vue'
 import PopularRecommend from '~/components/mall/PopularRecommend.vue'
 import FixRightNav from '~/components/mall/FixRightNav.vue'
 const api = useApi()
-const result = await api.product.getProductList(1)
-console.info(result)
+const { data, pending, error, refresh } = await api.product.getProductList(1)
 </script>
