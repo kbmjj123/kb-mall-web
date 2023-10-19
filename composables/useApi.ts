@@ -1,5 +1,5 @@
-import api from '~/api/index'
+import api from "~/api";
 
 export default function(){
-  return api
+  return api;
 }

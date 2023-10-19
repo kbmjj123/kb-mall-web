@@ -1,8 +1,8 @@
 import { ofetch } from 'ofetch'
 import type { FetchContext, FetchRequest, FetchOptions } from 'ofetch'
 import { apiHost } from '~/config/host'
-const TIME_OUT:number = 30000
-const RETRY_NUM:number = 3
+const TIME_OUT: number = 30000
+const RETRY_NUM: number = 3
 const onNormalRequest = async (context: FetchContext) => {
   console.info(context)
   const { request, options } = context;
@@ -30,4 +30,7 @@ const request = ofetch.create({
   onResponse: onNormalResponse
 })
 
-export default request
+
+export default {
+  post: request()
+}
