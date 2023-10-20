@@ -6,6 +6,7 @@
 
 <script lang="ts" setup>
 definePageMeta({
-  layout: 'account'
+  layout: 'account',
+  needLogin: true
 })
 </script>

@@ -1,4 +1,4 @@
-export const userAccountStore = defineStore('accountStore', 
+export const useAccountStore = defineStore('accountStore', 
 () => {
   const sessionId = ref('')
   return {

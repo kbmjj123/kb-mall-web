@@ -30,6 +30,7 @@ definePageMeta({
 })
 const account = ref('')
 const password = ref('')
+let target: string, from: string = ''
 const socialList = ref([
   {
     icon: 'uil:github',
@@ -65,6 +66,23 @@ const loginAction = () => {
     userStore.normalLogin(account.value, password.value)
   }
 }
+onMounted(() => {
+  const route = useRoute()
+  if(route.query){
+    target = route.query.target?.toString()!
+    from = route.query.from?.toString()!
+  }
+})
+const onLoginSuccess = () => {
+  if(target){
+    return navigateTo(target, {
+      replace: true
+    })
+  }else{
+    return navigateTo('/', { replace: true })
+  }
+}
+
 </script>
 
 <style lang="less" scoped>
