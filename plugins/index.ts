@@ -1,3 +1,3 @@
-export default defineNuxtPlugin(() => {
-  
+export default defineNuxtPlugin(nuxtApp => {
+  // nuxtApp.vueApp.directive('')
 })

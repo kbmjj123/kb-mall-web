@@ -34,5 +34,9 @@
     "goodCollect": "宝贝收藏",
     "storeCollect": "收藏的店",
     "browseHistory": "我的足迹"
+  },
+  "tip": {
+    "inputAccount": "请输入账号",
+    "inputPassword": "请输入密码"
   }
 }

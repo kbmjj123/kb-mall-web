@@ -1,4 +1,17 @@
+import { useKbFetch } from "#imports"
 export default {
-  login: (account: string, password: string) => {},
-  register: () => {}
+  normalLogin: async (account: string, password: string) => {
+    return useKbFetch({
+      url: "",
+      body: {
+        account, password
+      }
+    })
+  },
+  authLogin: async () => {},
+  randomCodeLogin: async () => {},
+  register: async () => {},
+  forgetPwd: async () => {},
+  modifyPwd: async () => {},
+  setPayPwd: async () => {}
 }

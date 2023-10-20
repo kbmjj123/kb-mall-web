@@ -1,4 +1,4 @@
-import type { UseFetchOptions } from 'nuxt/app'
+import type { UseFetchOptions, AsyncData } from 'nuxt/app'
 import { apiHost } from '~/config/host'
 import type { AvailableRouterMethod } from 'nitropack'
 import type { WatchSource } from "vue"

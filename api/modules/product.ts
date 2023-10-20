@@ -18,5 +18,9 @@ export default {
         productId
       }
     })
-  }
+  },
+  collectProduct: async (productId: string) => {
+
+  },
+  addToShoppingCar: async (productId: string, count: number) => {}
 }

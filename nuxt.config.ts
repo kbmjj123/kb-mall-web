@@ -5,6 +5,7 @@ export default defineNuxtConfig({
     '@nuxt/devtools',
     '@vueuse/nuxt',
     '@pinia/nuxt',
+    '@pinia-plugin-persistedstate/nuxt',
     '@nuxtjs/i18n',
     'nuxt-lodash',
     '@nuxtjs/tailwindcss',
@@ -34,5 +35,15 @@ export default defineNuxtConfig({
   colorMode: {
     classPrefix: '',
     classSuffix: ''
-  }
+  },
+  pinia: {
+    autoImports: ['defineStore', 'acceptHMRUpdate'],
+  },
+  imports: {
+    dirs: ['store']
+  },
+  build: {
+    // this issue appear at: https://github.com/prazdevs/pinia-plugin-persistedstate/issues/236
+    transpile: ['pinia-plugin-persistedstate'],
+  },
 })

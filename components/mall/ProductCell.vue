@@ -1,5 +1,5 @@
 <template>
-  <NuxtLink ref="productNode" class="hover:text-red-500" to="/product/detail" target="_blank">
+  <NuxtLink ref="productNode" class="hover:text-red-500" to="/product/detail/a8e71e4ed2a844a89111affec178fd9f" target="_blank">
     <div class="flex justify-center items-center p-8">
       <NuxtImg :src="item.productIcon" :class="[hoverFlag ? 'scale-[1.2]' : '', 'transition-all']"></NuxtImg>
     </div>

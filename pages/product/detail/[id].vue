@@ -14,6 +14,9 @@
 <script lang="ts" setup>
 import PicSkuRecommend from '~/components/mall/product/PicSkuRecommend.vue'
 import ShopAndDesc from '~/components/mall/product/ShopAndDesc.vue'
+const route = useRoute()
 const api = useApi()
-const result = await api.product.getProductDetail('a8e71e4ed2a844a89111affec178fd9f')
+const id: string = typeof route.params.id === 'string' ? route.params.id : route.params.id[0]
+const { data } = await api.product.getProductDetail(id)
+console.info(data)
 </script>
