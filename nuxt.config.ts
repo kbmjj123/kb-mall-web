@@ -46,4 +46,9 @@ export default defineNuxtConfig({
     // this issue appear at: https://github.com/prazdevs/pinia-plugin-persistedstate/issues/236
     transpile: ['pinia-plugin-persistedstate'],
   },
+  runtimeConfig: {
+    public: {
+      apiHost: process.env.NUXT_PUBLIC_API_PRODUCT
+    }
+  }
 })

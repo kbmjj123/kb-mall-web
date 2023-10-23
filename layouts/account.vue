@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="bg-gray-50 dark:bg-slate-800">
     <TopActivityBlock></TopActivityBlock>
     <slot></slot>
     <MerchantsFooter></MerchantsFooter>

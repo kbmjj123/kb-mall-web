@@ -1,1 +1,0 @@
-export const apiHost = "https://s1.zhidianlife.com"

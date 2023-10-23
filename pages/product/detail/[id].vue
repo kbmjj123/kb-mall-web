@@ -17,6 +17,9 @@ import ShopAndDesc from '~/components/mall/product/ShopAndDesc.vue'
 const route = useRoute()
 const api = useApi()
 const id: string = typeof route.params.id === 'string' ? route.params.id : route.params.id[0]
-const { data } = await api.product.getProductDetail(id)
+const { data, pending } = await api.product.getProductDetail(id)
 console.info(data)
+useHead({
+  title: data.value?.title
+})
 </script>

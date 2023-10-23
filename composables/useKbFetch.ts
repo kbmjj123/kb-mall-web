@@ -1,5 +1,4 @@
-import type { UseFetchOptions, AsyncData } from 'nuxt/app'
-import { apiHost } from '~/config/host'
+import type { UseFetchOptions } from 'nuxt/app'
 import type { AvailableRouterMethod } from 'nitropack'
 import type { WatchSource } from "vue"
 import { SearchParameters } from 'ofetch'
@@ -20,9 +19,10 @@ function transform<DataT>(input: DataT): DataT{
 }
 // the common fetch methods
 export function useKbFetch<T>(kbRequest: KbRequest){
+  const config = useRuntimeConfig()
   const { url, params, method = "post", body, server = true, lazy, watch } = kbRequest
   const defaults: UseFetchOptions<T> = {
-    baseURL: apiHost,
+    baseURL: <string>config.public.apiHost,
     key: url.toString(),
     method: method,
     params: params,
