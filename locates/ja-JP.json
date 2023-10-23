@@ -1,0 +1,42 @@
+{
+  "account": {
+    "accountLabel": "メールアドレス/アカウント名/ログイン携帯電話番号",
+    "existAccount1": "すでにアカウントをお持ちですか？",
+    "existAccount2": "サインインしてください",
+    "forgetPassword": "パスワードを忘れましたか?",
+    "login": "ログイン",
+    "loginTitle": "アカウントログイン",
+    "passwordLabel": "パスワード",
+    "register": "登録する",
+    "registerRightNow": "今すぐサインアップ",
+    "welcomeLogin": "ログインしてください",
+    "welcomeRegister": "登録へようこそ"
+  },
+  "app": {
+    "name": "KBモール",
+    "recommendForYou": "あなたに勧めた",
+    "welcome": "こんにちはこんにちは"
+  },
+  "common": {
+    "cancel": "キャンセル",
+    "sure": "もちろん"
+  },
+  "footer": {
+    "aboutUs": "私たちについて",
+    "concatUs": "お問い合わせ",
+    "copyright": "無断転載を禁じます",
+    "friendLink": "リンク",
+    "marchantSettled": "商人が住み着く",
+    "mobileMall": "モバイルモール",
+    "talentRecruitment": "募集"
+  },
+  "person": {
+    "browseHistory": "私の足跡",
+    "goodCollect": "ベビーコレクション",
+    "storeCollect": "お気に入りのお店"
+  },
+  "tip": {
+    "inputAccount": "ユーザー名を入力してください",
+    "inputPassword": "パスワードを入力してください"
+  }
+}

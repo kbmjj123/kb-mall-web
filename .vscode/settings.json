@@ -3,7 +3,7 @@
     "locates"
   ],
   "i18n-ally.keystyle": "nested",
-  "i18n-ally.sourceLanguage": "en",
+  "i18n-ally.sourceLanguage": "zh-CN",
   "files.associations": {
     "*.css": "tailwindcss"
   },

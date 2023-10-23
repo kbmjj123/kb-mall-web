@@ -1,0 +1,41 @@
+{
+  "account": {
+    "accountLabel": "信箱/帳號名/登入手機",
+    "existAccount1": "已有帳號?",
+    "existAccount2": "請登入",
+    "forgetPassword": "忘記密碼?",
+    "loginTitle": "帳號登入",
+    "passwordLabel": "密碼",
+    "register": "註冊",
+    "registerRightNow": "立即註冊",
+    "welcomeLogin": "歡迎登入",
+    "welcomeRegister": "歡迎註冊"
+  },
+  "app": {
+    "name": "KB商城",
+    "recommendForYou": "為你推薦",
+    "welcome": "Hi!您好"
+  },
+  "common": {
+    "cancel": "取消",
+    "sure": "確定"
+  },
+  "footer": {
+    "aboutUs": "關於我們",
+    "concatUs": "聯絡我們",
+    "copyright": "版權所有",
+    "friendLink": "友情連結",
+    "marchantSettled": "商家進駐",
+    "mobileMall": "手機商城",
+    "talentRecruitment": "人才招募"
+  },
+  "person": {
+    "browseHistory": "我的足跡",
+    "goodCollect": "寶貝收藏",
+    "storeCollect": "收藏的店"
+  },
+  "tip": {
+    "inputAccount": "請輸入帳號",
+    "inputPassword": "請輸入密碼"
+  }
+}

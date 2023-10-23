@@ -1,13 +1,21 @@
 {
   "app": {
-    "name": "KB Mall"
+    "name": "KB Mall",
+    "welcome": "Hi! Hello",
+    "recommendForYou": "recommended to you"
   },
   "common": {
     "sure": "OK",
     "cancel": "Cancel"
   },
   "footer": {
-    
+    "aboutUs": "about Us",
+    "copyright": "all rights reserved",
+    "friendLink": "Links",
+    "marchantSettled": "Merchants settle in",
+    "mobileMall": "mobile mall",
+    "talentRecruitment": "Recruitment",
+    "concatUs": "concat us"
   },
   "account": {
     "loginTitle": "Account Login",
@@ -18,6 +26,17 @@
     "register": "Register",
     "welcomeLogin": "Welcome Login",
     "registerRightNow": "register right now",
-    "welcomeRegister": "Welcome Register"
+    "welcomeRegister": "Welcome Register",
+    "existAccount1": "Already have an account?",
+    "existAccount2": "please sign in"
+  },
+  "person": {
+    "browseHistory": "my footprints",
+    "goodCollect": "Baby collection",
+    "storeCollect": "Favorite store"
+  },
+  "tip": {
+    "inputAccount": "Please input Username",
+    "inputPassword": "Please enter password"
   }
 }

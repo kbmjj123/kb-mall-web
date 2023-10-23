@@ -1,0 +1,41 @@
+{
+  "account": {
+    "accountLabel": "E-mail/nom du compte/identifiant téléphone portable",
+    "existAccount2": "veuillez vous connecter",
+    "forgetPassword": "oublié le mot de passe ?",
+    "login": "Se connecter",
+    "loginTitle": "Connexion au compte",
+    "passwordLabel": "mot de passe",
+    "register": "registre",
+    "registerRightNow": "S'inscrire maintenant",
+    "welcomeLogin": "Connectez-vous s'il vous plaît",
+    "welcomeRegister": "Bienvenue pour vous inscrire"
+  },
+  "app": {
+    "name": "Centre commercial KB",
+    "recommendForYou": "je vous ai recommandé",
+    "welcome": "Salut Bonjour"
+  },
+  "common": {
+    "cancel": "Annuler",
+    "sure": "Bien sûr"
+  },
+  "footer": {
+    "aboutUs": "à propos de nous",
+    "concatUs": "Contactez-nous",
+    "copyright": "tous droits réservés",
+    "friendLink": "Liens",
+    "marchantSettled": "Les commerçants s'installent",
+    "mobileMall": "centre commercial mobile",
+    "talentRecruitment": "Recrutement"
+  },
+  "person": {
+    "browseHistory": "mes empreintes",
+    "goodCollect": "Collection bébé",
+    "storeCollect": "Magasin préféré"
+  },
+  "tip": {
+    "inputAccount": "Veuillez saisir votre nom d'utilisateur",
+    "inputPassword": "Veuillez entrer le mot de passe"
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "account": {
+    "accountLabel": "이메일/계정명/로그인 휴대폰",
+    "existAccount1": "이미 계정이 있나요?",
+    "existAccount2": "로그인 해주세요",
+    "forgetPassword": "비밀번호를 잊으셨나요?",
+    "login": "로그인",
+    "loginTitle": "계정 로그인",
+    "passwordLabel": "비밀번호",
+    "register": "등록하다",
+    "registerRightNow": "지금 등록하세요",
+    "welcomeLogin": "로그인해주세요",
+    "welcomeRegister": "등록을 환영합니다"
+  },
+  "app": {
+    "name": "KB몰",
+    "recommendForYou": "당신에게 추천",
+    "welcome": "안녕하세요 안녕하세요"
+  },
+  "common": {
+    "cancel": "취소",
+    "sure": "확신하는"
+  },
+  "footer": {
+    "aboutUs": "회사 소개",
+    "concatUs": "문의하기",
+    "copyright": "판권 소유",
+    "friendLink": "연결",
+    "marchantSettled": "상인들이 정착하다",
+    "mobileMall": "모바일 쇼핑몰",
+    "talentRecruitment": "신병 모집"
+  },
+  "person": {
+    "browseHistory": "내 발자국",
+    "goodCollect": "베이비 컬렉션",
+    "storeCollect": "좋아하는 가게"
+  },
+  "tip": {
+    "inputAccount": "사용자 이름을 입력해주세요",
+    "inputPassword": "비밀번호를 입력 해주세요"
+  }
+}
