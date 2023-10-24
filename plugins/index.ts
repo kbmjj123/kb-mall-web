@@ -1,3 +1,8 @@
+import message from './message'
 export default defineNuxtPlugin(nuxtApp => {
-  // nuxtApp.vueApp.directive('')
+  return {
+    provide: {
+      kbmessage: message
+    }
+  }
 })

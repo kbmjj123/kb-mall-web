@@ -1,10 +1,11 @@
 import { useKbFetch } from "#imports"
+import md5 from 'md5'
 export default {
-  normalLogin: async (account: string, password: string) => {
+  normalLogin: async (phone: string, password: string) => {
     return useKbFetch({
-      url: "",
+      url: "/passport/api/mobile/login",
       body: {
-        account, password
+        phone, password: md5(password)
       }
     })
   },

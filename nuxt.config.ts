@@ -48,7 +48,8 @@ export default defineNuxtConfig({
   },
   runtimeConfig: {
     public: {
-      apiHost: process.env.NUXT_PUBLIC_API_PRODUCT
+      apiHost: process.env.NUXT_PUBLIC_API_MALL,
+      productHost: process.env.NUXT_PUBLIC_API_PRODUCT
     }
   }
 })

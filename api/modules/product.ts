@@ -1,4 +1,5 @@
 import { useKbFetch } from "#imports"
+import { HostType } from '~/composables/useKbFetch'
 type ProductInfo = {
   productId: string,
   productCode: string,
@@ -19,6 +20,7 @@ export default {
   // provice client and serve request because of sometimes it need loading in browse!!
   getProductList: async (pageIndex: number, server?: boolean) => {
     return useKbFetch({
+      hostType: HostType.Product,
       url: "/search/api/v2/commodity/searchFilter",
       body: {
         pageIndex,
@@ -29,6 +31,7 @@ export default {
   },
   getProductDetail: async (productId: string) => {
     return useKbFetch<ProductInfo>({
+      hostType: HostType.Product,
       url: "modityInfo/api/v1/mobile/detail",
       body: {
         productId

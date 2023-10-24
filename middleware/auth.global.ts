@@ -8,7 +8,7 @@ const addPageTitle = (to: RouteLocationNormalized) => {
 
 export default defineNuxtRouteMiddleware((to, from) => {
   // append every page title in html title node!
-  addPageTitle(to)
+  // addPageTitle(to)
   
   const accountStore = useAccountStore()
   if(to.meta.needLogin){
@@ -20,7 +20,5 @@ export default defineNuxtRouteMiddleware((to, from) => {
       const target = to.fullPath
       navigateTo(`/login?target=${target}&from=${from.fullPath}`)
     }
-  }else{
-    navigateTo(to)
   }
 })

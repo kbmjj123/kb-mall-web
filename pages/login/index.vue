@@ -26,8 +26,7 @@
 <script lang="ts" setup>
 const { t } = useI18n()
 definePageMeta({
-  layout: "account",
-  title: t('account.welcomeLogin')
+  layout: "account"
 })
 const account = ref('')
 const password = ref('')
@@ -64,7 +63,8 @@ const isInputCorrect = (): boolean => {
 const loginAction = async () => {
   if(isInputCorrect()){
     const userStore = useUserStore()
-    const { data, pending, error, refresh } = await userStore.normalLogin(account.value, password.value)
+    const { data, pending, error } = await userStore.normalLogin(account.value, password.value)
+    console.info(data, pending, error)
   }
 }
 onMounted(() => {
