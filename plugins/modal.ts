@@ -5,13 +5,22 @@ interface ModalProps{
   okTxt?: string,
   onOk?: Function,
   cancelTxt?: string,
-  onCancel?: Function
+  onCancel?: Function,
+  singleTxt?: string
 }
-export default {
+const modal = {
   show(props: ModalProps){
 
   },
   hide(props: ModalProps){
-    
+
   }
 }
+
+export default defineNuxtPlugin(nuxtapp => {
+  return {
+    provide: {
+      modal
+    }
+  }
+})

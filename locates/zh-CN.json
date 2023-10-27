@@ -17,6 +17,19 @@
     "mobileMall": "手机商城",
     "copyright": "版权所有"
   },
+  "product": {
+    "priceTarget": "¥",
+    "mallPrice": "商城价",
+    "addToCar": "加入购物车",
+    "totalComment": "累计评价",
+    "coupon": "优惠券",
+    "chooseSku": "选择规格",
+    "recommendTitle": "看了又看",
+    "enterShop": "进店逛逛",
+    "attendShop": "关注店铺",
+    "searchInShop": "店内搜索",
+    "search": "搜索"
+  },
   "account": {
     "loginTitle": "账户登录",
     "accountLabel": "邮箱/账号名/登录手机",

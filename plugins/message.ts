@@ -1,7 +1,6 @@
 import { createVNode, render } from 'vue'
 import KbMessage from '~/components/global/KbMessage.vue'
 import type { MessageType } from '~/components/global/KbMessage.vue'
-import { MSG_ID } from '~/components/global/KbMessage.vue'
 interface MessageProps {
   tips?: string,
   type?: MessageType,
@@ -11,7 +10,7 @@ interface MessageProps {
 
 const Ele = (props: MessageProps) => {
   if(process.client){
-    const id = MSG_ID
+    const id = 'kb-message'
     const div = document.querySelector(`#${id}`)
     if(!props.visible){
       return
@@ -28,7 +27,7 @@ const Ele = (props: MessageProps) => {
   }
 }
 
-export default {
+const message = {
   success(tips: string){
     Ele({ type: 'success', visible: true, tips })
   },
@@ -39,3 +38,11 @@ export default {
     Ele({ type: 'error', visible: true, tips })
   }
 }
+
+export default defineNuxtPlugin(nuxtapp => {
+  return {
+    provide: {
+      kbmessage: message
+    }
+  }
+})

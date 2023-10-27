@@ -1,8 +1,7 @@
 <template>
   <div>
-    商品详情
     <!-- 分类面包屑 -->
-    <BreadCrumbs></BreadCrumbs>
+    <BreadCrumbs :bread-crumb-list="breadCrumbList"></BreadCrumbs>
     <!-- 商品信息区域(左中右)：商品图区域(左)、商品信息(中)、推荐商品(右) -->
     <PicSkuRecommend></PicSkuRecommend>
     <!-- 商品店铺+详情区域(左右)：商品店铺(左)、详情区域(右) -->
@@ -22,4 +21,22 @@ console.info(data)
 useHead({
   title: data.value?.title
 })
+const breadCrumbList = ref([
+  {
+    id: 123,
+    title: '家用电器'
+  },
+  {
+    id: 123,
+    title: '个护健康'
+  },
+  {
+    id: 345,
+    title: '按摩椅'
+  },
+  {
+    id: 345,
+    title: '西屋'
+  }
+])
 </script>
