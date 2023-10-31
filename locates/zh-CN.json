@@ -28,7 +28,32 @@
     "enterShop": "进店逛逛",
     "attendShop": "关注店铺",
     "searchInShop": "店内搜索",
-    "search": "搜索"
+    "shopCate": "店内分类",
+    "shopHotSales": "店铺热销",
+    "search": "搜索",
+    "productDesc": "商品介绍",
+    "evaluationTitle": "商品评价",
+    "logisticsScore": "物流履约",
+    "afterService": "售后服务",
+    "allEvaluation": "全部评价",
+    "evaluationWithPic": "晒图",
+    "evaluationWithVideo": "视频晒单",
+    "evaluationAppended": "追评",
+    "evaluationGood": "好评",
+    "evaluationMiddle": "中评",
+    "evaluationBad": "差评",
+    "defaultSort": "默认排序",
+    "timeSort": "时间排序",
+    "turnLeft": "向左",
+    "turnRight": "向右"
+  },
+  "order": {
+    "allOrder": "全部订单",
+    "waitToPay": "待付款",
+    "waitToSend": "待发货",
+    "waitToGain": "待收货",
+    "alreadyCancel": "已取消",
+    "waitToEvaluate": "待评价"
   },
   "account": {
     "loginTitle": "账户登录",
@@ -50,6 +75,8 @@
   },
   "tip": {
     "inputAccount": "请输入账号",
-    "inputPassword": "请输入密码"
+    "inputPassword": "请输入密码",
+    "loading": "加载中，请稍后...",
+    "noMoreTip": "没有更多的数据了~"
   }
 }
