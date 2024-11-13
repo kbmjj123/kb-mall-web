@@ -1,13 +1,13 @@
 <template>
-  <div>
-    <div class="flex flex-row items-center">
+  <section>
+    <div class="flex flex-row items-center justify-center">
       <Loading v-if="status === LoadingStatus.loading" class="mr-2"></Loading>
-      <span>
+      <span class="text-sm text-stone-500">
         {{ LoadingStatus.loading === status ? $t('tip.loading') : $t('tip.noMoreTip') }}
       </span>
     </div>
     <Empty v-if="noneFlag"></Empty>
-  </div>
+  </section>
 </template>
 
 <script setup lang="ts">
